@@ -1,0 +1,515 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+button.normal{
+    font-size: 14px;
+    padding: 15px 30px;
+    color: #000;
+    font-weight: 900;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: 'Spartan', sans-serif;
+    border-radius: 5px;
+}
+
+body{
+    width: 100%;
+}
+
+#header{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 20px 80px;    
+     background-color: #dbdbdb;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+     z-index: 999;
+     position: sticky;
+     top: 0;
+     left: 0;
+}
+
+#header h1{
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    text-shadow: 1px 1px 1px rgb(31, 31, 31);
+    font-size: 45px;
+    font-weight: 800;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    font-family: 'Spartan', sans-serif;
+    transition: 1.9sec ease;
+    padding: 8px;
+    border-radius: 25px;
+}
+
+#navbar li a:hover,
+#navbar li a.active
+{
+    color: #088178;
+    box-shadow: 2px 2px 10px rgb(202, 202, 202);
+}
+
+#hero{
+    background-image: url(img/SONAMBAJWA.jpeg);
+    padding: 10px;
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 20% right 0;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Spartan', sans-serif;
+}
+
+#hero h4{
+    padding-bottom: 15px ;
+    font-family: 'Spartan', sans-serif;
+}
+
+#hero h1{
+    color: #088178;
+    font-family: 'Spartan', sans-serif;
+}
+
+#hero h2{
+    font-family: 'Spartan', sans-serif;
+    padding-bottom: 15px;
+}
+
+#hero button{
+    background-image: url(img/button.jpg);
+    background-color: transparent;
+    border: 0;
+    padding: 6px 30px 6px 25px;
+    font-size: 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;   
+    color: #fff;
+    text-shadow: 1px 1px 1px #7e7e7e;
+    border-radius: 5px;
+}
+#hero a{
+    color: #fff;
+    text-decoration: none;
+}
+#hero button:hover{
+    box-shadow: 2px 2px 20px #000;
+    text-shadow: 1px 1px 3px #000;
+}
+
+#product1{
+    text-align: center;
+}
+#product1 h2{
+    color: #000;
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 50px;
+}
+#product1 p{
+    color: #088178;
+    font-weight: 500;
+    font-family: 'Spartan', sans-serif ;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid; color: #d4d4d4;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2sec ease;
+    position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 2px 2px 20px rgb(0, 0, 0, 0.8);
+}
+
+#product1 .des{
+    color: black;
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .des span{
+    color: black;
+    font-size: 12px;
+}
+
+#product1 .des h5{
+    padding-top: 7px;
+    padding-bottom: 3px;
+    font-family: 'Spartan', sans-serif;
+}
+
+#product1 .pro .cart{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    color: #088178;
+    position: absolute;
+    font-weight: 300;
+    bottom: 15px;
+    right: 25px;
+}
+#product1 .pro .cart:hover{
+    background-color: #088178;
+    color: #e8f6ea;
+
+}
+
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-image: url(img/banner.jpg);
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    font-weight: 900;
+}
+
+#banner h2{
+    font-family: 'Spartan', sans-serif;
+    color: rgb(255, 255, 255);
+    box-shadow: 20px;
+    padding: 25px 0;
+    text-shadow: 2px 2px 2px rgb(99, 99, 99);
+}
+#banner button:hover{
+    background: #088178;
+    color: #fff;
+}
+
+#banner b{
+    font-family: 'Spartan', sans-serif ;
+}
+#sm-banner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#sm-banner .banner-box{
+    background-image: url(img/b1.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 25px;
+    flex-direction: column;
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 2px rgb(179, 179, 179);
+    cursor: pointer;
+}
+#sm-banner .banner-box2{
+    background-image: url(img/b2.jpg);
+}
+
+#sm-banner .banner-box h4,h2{
+    font-family: 'Spartan', sans-serif ;
+    padding: 4px;
+}
+#sm-banner .banner-box span{
+    padding-bottom: 29px;
+    padding-left: 4px;
+    font-family: 'Spartan', sans-serif ;
+    color: #fff;
+}
+#sm-banner .banner-box button{ 
+    padding : 10px 18px ;
+    border-radius: 2px;
+}
+
+#sm-banner .banner-box:hover button{
+    background-color: #088178;
+    color: #fff;
+}
+#sn-banner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+#sn-banner .banner-box3{
+    background-image: url(img/b3.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    flex-direction: column;
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 2px #ffffff);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#sn-banner h2{
+    color: #dbdbdb;
+    text-shadow: 2px 2px 2px #757575;
+}
+#sn-banner h4{
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #757575;
+    font-family: 'Spartan', sans-serif ;
+}
+
+#sn-banner .box4{
+    background-image: url(img/b5.jpg);
+}
+#sn-banner .box5{
+    background-image: url(img/b4.jpg);
+}
+
+#newsletter{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    background-image: url(img/nl1.png);
+    width: 100%;
+    height: 35vh;
+    padding: 1px 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#newsletter p{
+    font-family: 'Spartan', sans-serif ;
+    text-shadow: 1px 1px 1px #797979;
+    font-weight: 1000;
+    padding-left: 25px;
+    padding-top: 1px ;
+}
+#newsletter h2{
+    color: #fff;
+    text-shadow: 2px 2px 2px #7e7e7e;
+    padding-top: 25px;
+    padding-left: 25px;
+    font-size: 30px;
+}
+
+#newsletter span{
+    color: yellow;
+    font-family: 'Spartan', sans-serif ;
+    text-shadow: 1px 1px 1px #838383;
+    font-weight: 1000;
+}
+
+#newsletter .form{
+   padding-left: 26px;
+   padding-bottom: 30px;
+}
+
+#newsletter input{
+    min-height: 1.5rem;
+    padding: 10px 20px;
+    font-family: 'Spartan', sans-serif ;
+    font-size: 14px;
+    width: 20%;
+    border: 1px solid #088178 ;
+    border-radius: 5px;
+}
+
+#newsletter button{
+    font-size: 14px;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.5px 0.5px 0.5px #9c9c9c;
+    font-weight: 900;
+    background-color: #088178;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: 'Spartan', sans-serif;
+    border-radius: 5px;
+}
+
+#newsletter button:hover{
+    background-color: rgb(0, 0, 0);
+    color: #e4e4e4;
+    text-shadow: 0.5px 0.5px 0.5px #9c9c9c;
+}
+footer h4{
+    font-family: 'Spartan', sans-serif ;
+    justify-content: center;
+    background-color: #000;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    font-size: 11px;
+}
+
+#page-header{
+    background-image: url(img/shopbn.jpg);
+    height: 42vh;
+    width: 100%;
+    
+}
+
+#page-header h2{
+    text-shadow: 3px 3px 5px #000000;
+    color: #088178;
+    font-family: 'Spartan', sans-serif ;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 60px;
+    font-weight: 50000;
+}
+
+#page-header p{
+    color: #088178;
+    font-family: 'Spartan', sans-serif ;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+#page-header input{
+    min-height: 1.5rem;
+    border: 1px solid #e6e6e6;
+    justify-content: center;
+    text-align: start;
+    padding: 10px;
+    border-radius: 5px;
+    flex-direction: row;
+    margin-left: 545px;
+    font-family: 'Spartan', sans-serif ;
+    background-color: #ebebeb;
+}
+#page-header button{
+    min-height: 1.5rem;
+    border: 1px solid #088178;
+    justify-content: center;
+    text-align: start;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #088178;
+    color: #ebebeb;
+    font-family: 'Spartan', sans-serif ;
+    font-weight: 900;
+}
+#page-header button:hover{
+    background-color: #000000;
+    color: #ebebeb;
+    border: 1px solid #000000;
+}
+#pageination{
+    border: #088178;
+    padding: 2px;
+    justify-content: center;
+    text-align: center;
+}
+#pageination a{
+    background-color: #088178;
+    padding: 7px 11px;
+    margin: 3px;
+    color: #ebebeb;
+    text-decoration: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px #000000;
+    font-size: 20px;
+}
+#pageination i{
+    font-size: 15px;
+}
